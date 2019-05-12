@@ -1,23 +1,24 @@
 package task4.dao.impl;
 
-import task4.dao.CartHashTable;
+import task4.container.Cart;
 import task4.dao.IDAOCart;
+import task4.entity.Beer;
 
 public class DaoCartImpl implements IDAOCart {
-    CartHashTable shoppingCart;
+    Cart shoppingCart;
 
-    public DaoCartImpl(CartHashTable shoppingCart) {
+    public DaoCartImpl(Cart shoppingCart) {
         this.shoppingCart = shoppingCart;
     }
 
     @Override
-    public void addProduct(String name, int countOfProducts) {
-        shoppingCart.add(name, countOfProducts);
+    public void addProduct(Beer beer, int countOfProducts) {
+        shoppingCart.add(beer, countOfProducts);
     }
 
     @Override
     public void removeAllProducts() {
-        shoppingCart.toHashtable().clear();
+        shoppingCart.clear();
     }
 
     @Override
@@ -26,8 +27,17 @@ public class DaoCartImpl implements IDAOCart {
 
     @Override
     public void showAllProductsInCard() {
-        for (Object key : shoppingCart.toHashtable().keySet()) {
-            System.out.println("name = " + key + ", count = " +  shoppingCart.toHashtable().get(key));
+        for (Beer key : shoppingCart.keySet()) {
+            System.out.println("name = " + key.getName() + ", count = " +  shoppingCart.get(key));
         }
+    }
+
+    @Override
+    public int getTotalOrderValue() {
+        int totalCost = 0;
+        for (Beer key : shoppingCart.keySet()){
+            totalCost += key.getCost() * shoppingCart.get(key);
+        }
+        return totalCost;
     }
 }

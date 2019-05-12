@@ -65,14 +65,16 @@ public class Beer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Beer beer = (Beer) o;
-        return alcoholPercentage == beer.alcoholPercentage &&
-                name.equals(beer.name) &&
-                country.equals(beer.country);
+        return id == beer.id &&
+                cost == beer.cost &&
+                alcoholPercentage == beer.alcoholPercentage &&
+                Objects.equals(name, beer.name) &&
+                Objects.equals(country, beer.country);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, alcoholPercentage, country);
+        return Objects.hash(id, cost, name, alcoholPercentage, country);
     }
 
     @Override

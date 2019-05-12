@@ -6,9 +6,11 @@ public interface IDAOCart {
 
     void showAllProductsInCard();
 
-    void addProduct(String name, int countOfProducts);
+    void addProduct(Beer beer, int countOfProducts);
 
     void removeAllProducts();
 
     void showInformationAbout5LatestProducts();
+
+    int getTotalOrderValue();
 }

@@ -1,41 +1,50 @@
 package task4;
 
-import task4.command.AddProductIntoCard;
-import task4.command.Realisator;
-import task4.command.ShowAllProducts;
-import task4.command.ShowProductInCard;
-import task4.dao.CartHashTable;
+import task4.strategy.*;
+import task4.container.Cart;
 import task4.dao.IDAOCart;
 import task4.dao.IDAOShopStorage;
-import task4.dao.ShoppingStorageList;
+import task4.container.StoreStorage;
 import task4.dao.impl.DaoCartImpl;
 import task4.dao.impl.DaoShopStorageImpl;
-import task4.service.Cart;
-import task4.service.ShoppingStorage;
-import task4.service.impl.CartImpl;
-import task4.service.impl.ShoppingStorageImpl;
+import task4.service.CartService;
+import task4.service.ShoppingStorageService;
+import task4.service.impl.CartServiceImpl;
+import task4.service.impl.ShoppingStorageServiceImpl;
+import task4.strategy.Impl.AddProductIntoCard;
+import task4.strategy.Impl.BuyAllProductsFromCard;
+import task4.strategy.Impl.ShowAllProducts;
+import task4.strategy.Impl.ShowProductInCard;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 public class Demo {
     public static void main(String[] args) {
-        ShoppingStorageList shoppingStorageList = new ShoppingStorageList();
-        CartHashTable cartHashTable = new CartHashTable();
+        StoreStorage shoppingStorageList = new StoreStorage();
+        Cart cartHashTable = new Cart();
 
         IDAOShopStorage daoShopStorage = new DaoShopStorageImpl(shoppingStorageList);
         IDAOCart daoCart = new DaoCartImpl(cartHashTable);
 
-        ShoppingStorage shoppingStorage = new ShoppingStorageImpl(daoShopStorage);
-        Cart cart = new CartImpl(daoCart);
+        ShoppingStorageService shoppingStorage = new ShoppingStorageServiceImpl(daoShopStorage);
+        CartService cart = new CartServiceImpl(daoCart);
 
-        Realisator realisator = new Realisator.RealisatorBuilder()
-                .setAddProductIntoCard(new AddProductIntoCard(cart, shoppingStorage))
-                .setShowAllProducts(new ShowAllProducts(shoppingStorage))
-                .setShowProductsInCard(new ShowProductInCard(cart))
-                .build();
+        StrategyClient strategyClient = new StrategyClient();
 
-        realisator.showAllProducts();
-        realisator.addProduct();
-        realisator.showProductsInCard();
-        realisator.addProduct();
-        realisator.showProductsInCard();
+        Map<String, Strategy> map = new HashMap<>();
+        map.put("1", new ShowAllProducts(shoppingStorage));
+        map.put("2", new ShowProductInCard(cart));
+        map.put("3", new AddProductIntoCard(cart, shoppingStorage));
+        map.put("4", new BuyAllProductsFromCard(cart));
+
+        Scanner sc = new Scanner(System.in);
+        while (true){
+            String number = sc.next();
+            strategyClient.setStrategy(map.get(number));
+            strategyClient.executeStrategy();
+        }
     }
+
 }

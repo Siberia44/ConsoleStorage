@@ -1,8 +1,12 @@
 package task4.dao;
 
+import task4.entity.Beer;
+
+import java.util.ArrayList;
+
 public interface IDAOShopStorage {
 
-    void showAllProducts();
+    ArrayList getAllProducts();
 
-    boolean contains(String name);
+    Beer getBeerByName(String name);
 }

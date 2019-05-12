@@ -1,31 +1,30 @@
 package task4.dao.impl;
 
 import task4.dao.IDAOShopStorage;
-import task4.dao.ShoppingStorageList;
+import task4.container.StoreStorage;
+import task4.entity.Beer;
+
+import java.util.ArrayList;
 
 public class DaoShopStorageImpl implements IDAOShopStorage {
-    ShoppingStorageList storage;
+    StoreStorage storage;
 
-    public DaoShopStorageImpl(ShoppingStorageList storage) {
+    public DaoShopStorageImpl(StoreStorage storage) {
         this.storage = storage;
     }
 
     @Override
-    public void showAllProducts() {
-        for (int i = 0; i < storage.toArrayList().size(); i++) {
-            System.out.print(i + "- ");
-            System.out.print(storage.toArrayList().get(i));
-            System.out.println();
-        }
+    public ArrayList<Beer> getAllProducts() {
+        return storage.toArrayList();
     }
 
     @Override
-    public boolean contains(String name) {
-        for (int i = 0; i < storage.toArrayList().size(); i++) {
-            if (storage.toArrayList().get(i).getName().equals(name)){
-                return true;
+    public Beer getBeerByName(String name) {
+        for (int i = 0; i < storage.size(); i++) {
+            if (storage.get(i).getName().equals(name)){
+                return storage.get(i);
             }
         }
-        return false;
+        return null;
     }
 }
