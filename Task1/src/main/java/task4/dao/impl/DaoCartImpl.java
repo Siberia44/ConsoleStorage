@@ -1,19 +1,24 @@
 package task4.dao.impl;
 
-import task4.container.Cart;
 import task4.dao.IDAOCart;
 import task4.entity.Beer;
 
-public class DaoCartImpl implements IDAOCart {
-    Cart shoppingCart;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
-    public DaoCartImpl(Cart shoppingCart) {
-        this.shoppingCart = shoppingCart;
+public class DaoCartImpl implements IDAOCart {
+    private HashMap<Beer, Integer> shoppingCart;
+    private LinkedHashMap<Beer, Integer> shoppingCartStorage;
+
+    public DaoCartImpl() {
+        shoppingCart = new HashMap<>();
     }
 
     @Override
     public void addProduct(Beer beer, int countOfProducts) {
-        shoppingCart.add(beer, countOfProducts);
+        shoppingCart.put(beer, countOfProducts);
+       // shoppingCartStorage.put(beer, countOfProducts);
     }
 
     @Override
@@ -22,14 +27,13 @@ public class DaoCartImpl implements IDAOCart {
     }
 
     @Override
-    public void showInformationAbout5LatestProducts() {
+    public Map getInformationAbout5LatestProducts() {
+       return null; //TO DO
     }
 
     @Override
-    public void showAllProductsInCard() {
-        for (Beer key : shoppingCart.keySet()) {
-            System.out.println("name = " + key.getName() + ", count = " +  shoppingCart.get(key));
-        }
+    public Map getAllProductsInCart() {
+        return shoppingCart;
     }
 
     @Override
@@ -39,5 +43,10 @@ public class DaoCartImpl implements IDAOCart {
             totalCost += key.getCost() * shoppingCart.get(key);
         }
         return totalCost;
+    }
+
+    @Override
+    public int getCountOfProducts(Beer beer) {
+        return shoppingCart.get(beer);
     }
 }

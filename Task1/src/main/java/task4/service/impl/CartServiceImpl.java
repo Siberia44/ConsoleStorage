@@ -4,6 +4,8 @@ import task4.dao.IDAOCart;
 import task4.entity.Beer;
 import task4.service.CartService;
 
+import java.util.Map;
+
 public class CartServiceImpl implements CartService {
     IDAOCart daoCart;
 
@@ -13,17 +15,21 @@ public class CartServiceImpl implements CartService {
 
     @Override
     public void addProductIntoCart(Beer beer, int countOfProducts) {
-        daoCart.addProduct(beer, countOfProducts);
+        int currentCount = daoCart.getCountOfProducts(beer);
+        daoCart.addProduct(beer, countOfProducts + currentCount);
     }
 
     @Override
     public void showInformationAbout5LatestProductsFromCart() {
-        daoCart.showInformationAbout5LatestProducts();
+        daoCart.getInformationAbout5LatestProducts();
     }
 
     @Override
     public void showAllProductsInCard() {
-        daoCart.showAllProductsInCard();
+        Map<Beer, Integer> products = daoCart.getAllProductsInCart();
+        for (Beer key : products.keySet()) {
+            System.out.println("name = " + key.getName() + ", count = " +  products.get(key));
+        }
     }
 
     @Override
@@ -32,6 +38,5 @@ public class CartServiceImpl implements CartService {
         daoCart.removeAllProducts();
         return totalOrderValue;
     }
-
 
 }
