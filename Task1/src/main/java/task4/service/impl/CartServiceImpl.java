@@ -4,7 +4,9 @@ import task4.dao.IDAOCart;
 import task4.entity.Beer;
 import task4.service.CartService;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class CartServiceImpl implements CartService {
     IDAOCart daoCart;
@@ -16,12 +18,16 @@ public class CartServiceImpl implements CartService {
     @Override
     public void addProductIntoCart(Beer beer, int countOfProducts) {
         int currentCount = daoCart.getCountOfProducts(beer);
-        daoCart.addProduct(beer, countOfProducts + currentCount);
+        if (currentCount != -1){
+            countOfProducts =+ currentCount;
+        }
+        daoCart.addProduct(beer, countOfProducts);
     }
 
     @Override
     public void showInformationAbout5LatestProductsFromCart() {
-        daoCart.getInformationAbout5LatestProducts();
+        Map linkedHashMap = daoCart.getInformationAbout5LatestProducts();
+        linkedHashMap.entrySet().stream().forEach(System.out::println);
     }
 
     @Override

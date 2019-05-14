@@ -1,5 +1,6 @@
 package task4;
 
+import task4.command.Impl.*;
 import task4.dao.IDAOCart;
 import task4.dao.IDAOShopStorage;
 import task4.dao.impl.DaoCartImpl;
@@ -8,10 +9,6 @@ import task4.service.CartService;
 import task4.service.ShoppingStorageService;
 import task4.service.impl.CartServiceImpl;
 import task4.service.impl.ShoppingStorageServiceImpl;
-import task4.command.Impl.AddProductIntoCard;
-import task4.command.Impl.BuyAllProductsFromCard;
-import task4.command.Impl.ShowAllProducts;
-import task4.command.Impl.ShowProductInCard;
 import task4.command.Command;
 import task4.command.CommandClient;
 
@@ -34,6 +31,7 @@ public class Demo {
         map.put("2", new ShowProductInCard(cart));
         map.put("3", new AddProductIntoCard(cart, shoppingStorage));
         map.put("4", new BuyAllProductsFromCard(cart));
+        map.put("5", new ShowLast5Products(cart));
 
         Scanner sc = new Scanner(System.in);
         while (true){

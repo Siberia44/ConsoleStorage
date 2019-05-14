@@ -6,6 +6,9 @@ import task4.entity.Beer;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class DaoCartImpl implements IDAOCart {
     private HashMap<Beer, Integer> shoppingCart;
@@ -13,12 +16,13 @@ public class DaoCartImpl implements IDAOCart {
 
     public DaoCartImpl() {
         shoppingCart = new HashMap<>();
+        shoppingCartStorage = new LinkedHashMap<>();
     }
 
     @Override
     public void addProduct(Beer beer, int countOfProducts) {
         shoppingCart.put(beer, countOfProducts);
-       // shoppingCartStorage.put(beer, countOfProducts);
+        shoppingCartStorage.put(beer, countOfProducts);
     }
 
     @Override
@@ -28,7 +32,8 @@ public class DaoCartImpl implements IDAOCart {
 
     @Override
     public Map getInformationAbout5LatestProducts() {
-       return null; //TO DO
+       return shoppingCartStorage.entrySet().stream().limit(5)
+               .collect(Collectors.toMap(p -> p.getKey(), p -> p.getValue()));
     }
 
     @Override
@@ -47,6 +52,6 @@ public class DaoCartImpl implements IDAOCart {
 
     @Override
     public int getCountOfProducts(Beer beer) {
-        return shoppingCart.get(beer);
+        return shoppingCart.containsValue(beer) ? shoppingCart.get(beer) : -1;
     }
 }
