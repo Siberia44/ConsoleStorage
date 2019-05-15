@@ -17,7 +17,7 @@ public class ShoppingStorageServiceImpl implements ShoppingStorageService {
     public void showAllProductsFromStorage() {
         ArrayList<Beer> products = daoShopStorage.getAllProducts();
         for (Beer beer : products){
-            System.out.println(beer.getId()+" - "   + beer);
+            System.out.println(beer.getId()+" - "+ beer);
         }
     }
 

@@ -1,13 +1,17 @@
 package task4.service;
 
-import task4.entity.Beer;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Map;
 
 public interface CartService {
-    void addProductIntoCart(Beer beer, int countOfProducts);
+    void addProductIntoCart(String productName, int countOfProducts);
 
-    int makeOrder();
+    int makeOrder(Date date);
 
     void showInformationAbout5LatestProductsFromCart();
 
     void showAllProductsInCard();
+
+    Map removeAllProductsFromCart();
 }

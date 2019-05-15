@@ -8,11 +8,9 @@ import java.util.Scanner;
 
 public class AddProductIntoCard implements Command {
     CartService cart;
-    ShoppingStorageService shoppingStorage;
 
-    public AddProductIntoCard(CartService cart, ShoppingStorageService shoppingStorage) {
+    public AddProductIntoCard(CartService cart) {
         this.cart = cart;
-        this.shoppingStorage = shoppingStorage;
     }
 
     @Override
@@ -22,6 +20,6 @@ public class AddProductIntoCard implements Command {
         String productName = sc.next();
         System.out.println("Введите количество единиц");
         int countOfProducts = sc.nextInt();
-        cart.addProductIntoCart(shoppingStorage.getBeerByName(productName), countOfProducts);
+        cart.addProductIntoCart(productName, countOfProducts);
     }
 }

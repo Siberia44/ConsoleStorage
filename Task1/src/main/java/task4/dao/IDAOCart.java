@@ -2,6 +2,8 @@ package task4.dao;
 
 import task4.entity.Beer;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public interface IDAOCart {
@@ -10,9 +12,11 @@ public interface IDAOCart {
 
     void addProduct(Beer beer, int countOfProducts);
 
-    void removeAllProducts();
+    HashMap removeAllProducts();
 
-    Map<Beer, Integer> getInformationAbout5LatestProducts();
+    void addIntoMapFor5LastProducts(Beer beer, int countOfProducts);
+
+    LinkedHashMap getInformationAbout5LatestProducts();
 
     int getTotalOrderValue();
 

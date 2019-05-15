@@ -6,9 +6,6 @@ import task4.entity.Beer;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 public class DaoCartImpl implements IDAOCart {
     private HashMap<Beer, Integer> shoppingCart;
@@ -22,18 +19,25 @@ public class DaoCartImpl implements IDAOCart {
     @Override
     public void addProduct(Beer beer, int countOfProducts) {
         shoppingCart.put(beer, countOfProducts);
-        shoppingCartStorage.put(beer, countOfProducts);
+        addIntoMapFor5LastProducts(beer, countOfProducts);
     }
 
     @Override
-    public void removeAllProducts() {
+    public LinkedHashMap getInformationAbout5LatestProducts() {
+        return shoppingCartStorage;
+    }
+
+    @Override
+    public HashMap removeAllProducts() {
+        HashMap deletedCart = new HashMap(shoppingCart);
         shoppingCart.clear();
+        return deletedCart;
     }
 
     @Override
-    public Map getInformationAbout5LatestProducts() {
-       return shoppingCartStorage.entrySet().stream().limit(5)
-               .collect(Collectors.toMap(p -> p.getKey(), p -> p.getValue()));
+    public void addIntoMapFor5LastProducts(Beer beer, int countOfProduct) {
+        shoppingCartStorage.put(beer, countOfProduct);
+        shoppingCartStorage.keySet().removeIf(o -> shoppingCartStorage.size() == 6);
     }
 
     @Override
@@ -44,7 +48,7 @@ public class DaoCartImpl implements IDAOCart {
     @Override
     public int getTotalOrderValue() {
         int totalCost = 0;
-        for (Beer key : shoppingCart.keySet()){
+        for (Beer key : shoppingCart.keySet()) {
             totalCost += key.getCost() * shoppingCart.get(key);
         }
         return totalCost;
@@ -52,6 +56,6 @@ public class DaoCartImpl implements IDAOCart {
 
     @Override
     public int getCountOfProducts(Beer beer) {
-        return shoppingCart.containsValue(beer) ? shoppingCart.get(beer) : -1;
+        return shoppingCart.getOrDefault(beer, 0);
     }
 }
