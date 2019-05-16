@@ -10,12 +10,9 @@ public class DaoShopStorageImpl implements IDAOShopStorage {
 
     public DaoShopStorageImpl() {
         shoppingStorage = new ArrayList();
-        Beer radler =  new Beer(1, 300, "1", 30, "Ukraine");
-        Beer hoegarden = new Beer(2, 320, "2", 12, "Germany");
-        Beer leffe = new Beer(3, 123, "3", 14, "England");
-        shoppingStorage.add(radler);
-        shoppingStorage.add(hoegarden);
-        shoppingStorage.add(leffe);
+        shoppingStorage.add(new Beer(1, 300, "1", 30, "Ukraine"));
+        shoppingStorage.add( new Beer(2, 320, "2", 12, "Germany"));
+        shoppingStorage.add(new Beer(3, 123, "3", 14, "England"));
     }
 
     @Override

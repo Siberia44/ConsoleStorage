@@ -1,12 +1,13 @@
 package task4.service;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Map;
 
 public interface OrderService {
-    void putInfoAboutOrderIntoMap(Date date, Map map);
+    void putInfoAboutOrderIntoMap(LocalDate date, Map map);
 
     Map getNearestOrder(String date);
 
-    Map.Entry getOrdersInGap(String firstDate, String lastDate);
+    Map getOrdersInGap(String firstDate, String lastDate);
 }

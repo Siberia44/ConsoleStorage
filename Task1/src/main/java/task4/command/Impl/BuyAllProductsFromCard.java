@@ -1,13 +1,10 @@
 package task4.command.Impl;
 
-import task4.service.CartService;
 import task4.command.Command;
-import task4.service.OrderService;
+import task4.service.CartService;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class BuyAllProductsFromCard implements Command {
@@ -19,17 +16,13 @@ public class BuyAllProductsFromCard implements Command {
 
     @Override
     public void execute() {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/MM/yyyy");
         Scanner sc = new Scanner(System.in);
         System.out.println("Please input date (dd.MM.yyy): ");
-        Date date1 = null;
+        LocalDate localDate;
         String date = sc.nextLine();
-        try {
-            date1 = simpleDateFormat.parse(date);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        System.out.println(cartService.makeOrder(date1));
+        localDate = LocalDate.parse(date, formatter);
+        System.out.println(cartService.makeOrder(localDate));
     }
 
 }

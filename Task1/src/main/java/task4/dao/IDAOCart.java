@@ -10,7 +10,7 @@ public interface IDAOCart {
 
     Map getAllProductsInCart();
 
-    void addProduct(Beer beer, int countOfProducts);
+    boolean addProduct(Beer beer, int countOfProducts);
 
     HashMap removeAllProducts();
 

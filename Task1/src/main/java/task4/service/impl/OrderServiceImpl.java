@@ -5,7 +5,10 @@ import task4.service.OrderService;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class OrderServiceImpl implements OrderService {
     IDAOOrder daoOrder;
@@ -15,52 +18,38 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public void putInfoAboutOrderIntoMap(Date date, Map map) {
+    public void putInfoAboutOrderIntoMap(LocalDate date, Map map) {
         daoOrder.putOrderIntoOrderMap(date, map);
     }
 
     @Override
     public Map getNearestOrder(String date) {
-        Date date1 = parseDateFromString(date);
-        TreeMap<Date, Map> map = daoOrder.getOrdersMap();
-        Date before = map.floorKey(date1);
-        Date after = map.ceilingKey(date1);
+        LocalDate nearestDate = parseDateFromString(date);
+        TreeMap<LocalDate, Map> map = daoOrder.getOrdersMap();
+        LocalDate before = map.floorKey(nearestDate);
+        LocalDate after = map.ceilingKey(nearestDate);
         if (before == null) {
             return map.get(after);
         }
         if (after == null) {
             return map.get(before);
         }
-        return (date1.getTime() - before.getTime() < after.getTime() - date1.getTime()
-                || after.getTime() - date1.getTime() < 0)
-                && date1.getTime() - before.getTime() > 0 ? map.get(before) : map.get(after);
+        return (nearestDate.toEpochDay() - before.toEpochDay() < after.toEpochDay() - nearestDate.toEpochDay()
+                || after.toEpochDay() - nearestDate.toEpochDay() < 0)
+                && nearestDate.toEpochDay() - before.toEpochDay() > 0 ? map.get(before) : map.get(after);
     }
 
 
     @Override
-    public Map.Entry getOrdersInGap(String firstDate, String lastDate) {
-        Date startDate = parseDateFromString(firstDate);
-        Date finishDate = parseDateFromString(lastDate);
-        TreeMap<Date, Map> map = daoOrder.getOrdersMap();
-        Map.Entry arrayList1 =  map.floorEntry(finishDate);
-        Map.Entry arrayList2 =  map.ceilingEntry(startDate);
-        if (arrayList1 == null){
-            return arrayList2;
-        }
-        if (arrayList2 == null){
-            return arrayList1;
-        }
-        Map mapTry = new HashMap();
-        return arrayList2;
+    public Map getOrdersInGap(String firstDate, String lastDate) {
+        LocalDate startDate = parseDateFromString(firstDate);
+        LocalDate finishDate = parseDateFromString(lastDate);
+        TreeMap<LocalDate, Map> map = daoOrder.getOrdersMap();
+        return map.subMap(startDate,true,finishDate,true);
     }
 
-    private Date parseDateFromString(String date) {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy");
-        try {
-            return simpleDateFormat.parse(date);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        return null;
+    private LocalDate parseDateFromString(String date) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        return LocalDate.parse(date, formatter);
     }
 }

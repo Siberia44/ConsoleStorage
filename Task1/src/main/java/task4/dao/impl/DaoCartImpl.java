@@ -17,9 +17,10 @@ public class DaoCartImpl implements IDAOCart {
     }
 
     @Override
-    public void addProduct(Beer beer, int countOfProducts) {
+    public boolean addProduct(Beer beer, int countOfProducts) {
         shoppingCart.put(beer, countOfProducts);
         addIntoMapFor5LastProducts(beer, countOfProducts);
+        return true;
     }
 
     @Override

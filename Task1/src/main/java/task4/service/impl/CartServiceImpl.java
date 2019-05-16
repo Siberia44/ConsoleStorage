@@ -6,7 +6,7 @@ import task4.service.CartService;
 import task4.service.OrderService;
 import task4.service.ShoppingStorageService;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -24,23 +24,16 @@ public class CartServiceImpl implements CartService {
 
     @Override
     public void addProductIntoCart(String name, int countOfProducts) {
-        if (!checkIndex(countOfProducts)){
+        if (!checkIndex(countOfProducts)) {
             System.out.println("Invalid number value");
             return;
         }
         Beer beer = shoppingStorageService.getBeerByName(name);
-        if (Objects.nonNull(beer)) {
-            daoCart.addProduct(beer, daoCart.getCountOfProducts(beer) + countOfProducts);
-        } else {
+        if (Objects.isNull(beer)) {
             System.out.println("Product not fount in shop");
+        } else {
+            daoCart.addProduct(beer, daoCart.getCountOfProducts(beer) + countOfProducts);
         }
-    }
-
-    private boolean checkIndex(int countOfProducts){
-        if (countOfProducts <= 0){
-            return false;
-        }
-        return true;
     }
 
     @Override
@@ -58,7 +51,7 @@ public class CartServiceImpl implements CartService {
     }
 
     @Override
-    public int makeOrder(Date date) {
+    public int makeOrder(LocalDate date) {
         int totalOrderValue = daoCart.getTotalOrderValue();
         order.putInfoAboutOrderIntoMap(date, removeAllProductsFromCart());
         return totalOrderValue;
@@ -67,5 +60,12 @@ public class CartServiceImpl implements CartService {
     @Override
     public Map removeAllProductsFromCart() {
         return daoCart.removeAllProducts();
+    }
+
+    private boolean checkIndex(int countOfProducts) {
+        if (countOfProducts <= 0) {
+            return false;
+        }
+        return true;
     }
 }

@@ -14,7 +14,6 @@ import task4.service.impl.CartServiceImpl;
 import task4.service.impl.OrderServiceImpl;
 import task4.service.impl.ShoppingStorageServiceImpl;
 
-import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -22,15 +21,7 @@ import java.util.Scanner;
 public class CommandManager {
     private IDAOShopStorage daoShopStorage = new DaoShopStorageImpl();
     private IDAOCart daoCart = new DaoCartImpl();
-    private IDAOOrder daoOrder;
-
-    {
-        try {
-            daoOrder = new DaoOrderImpl();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-    }
+    private IDAOOrder daoOrder = new DaoOrderImpl();
 
     private ShoppingStorageService shoppingStorage = new ShoppingStorageServiceImpl(daoShopStorage);
     private OrderService order = new OrderServiceImpl(daoOrder);
