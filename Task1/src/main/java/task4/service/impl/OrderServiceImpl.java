@@ -3,12 +3,10 @@ package task4.service.impl;
 import task4.dao.IDAOOrder;
 import task4.service.OrderService;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class OrderServiceImpl implements OrderService {
     IDAOOrder daoOrder;
@@ -49,7 +47,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     private LocalDate parseDateFromString(String date) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         return LocalDate.parse(date, formatter);
     }
 }

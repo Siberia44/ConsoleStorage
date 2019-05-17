@@ -8,11 +8,8 @@ import java.util.*;
 public class DaoShopStorageImpl implements IDAOShopStorage {
     ArrayList<Beer> shoppingStorage;
 
-    public DaoShopStorageImpl() {
-        shoppingStorage = new ArrayList();
-        shoppingStorage.add(new Beer(1, 300, "1", 30, "Ukraine"));
-        shoppingStorage.add( new Beer(2, 320, "2", 12, "Germany"));
-        shoppingStorage.add(new Beer(3, 123, "3", 14, "England"));
+    public DaoShopStorageImpl(ArrayList<Beer> shoppingStorage) {
+        this.shoppingStorage = shoppingStorage;
     }
 
     @Override

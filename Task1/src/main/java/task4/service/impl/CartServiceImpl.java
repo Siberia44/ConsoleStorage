@@ -9,6 +9,7 @@ import task4.service.ShoppingStorageService;
 import java.time.LocalDate;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.NoSuchElementException;
 import java.util.Objects;
 
 public class CartServiceImpl implements CartService {
@@ -25,12 +26,11 @@ public class CartServiceImpl implements CartService {
     @Override
     public void addProductIntoCart(String name, int countOfProducts) {
         if (!checkIndex(countOfProducts)) {
-            System.out.println("Invalid number value");
-            return;
+            throw new IllegalArgumentException("count of products is npt correct");
         }
         Beer beer = shoppingStorageService.getBeerByName(name);
         if (Objects.isNull(beer)) {
-            System.out.println("Product not fount in shop");
+            throw new NoSuchElementException("Product is not exist");
         } else {
             addProductsIntoShoppingCart(beer, countOfProducts);
             addProductsIntoShoppingCartStorage(beer, countOfProducts);

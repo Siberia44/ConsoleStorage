@@ -7,19 +7,24 @@ import task4.dao.IDAOShopStorage;
 import task4.dao.impl.DaoCartImpl;
 import task4.dao.impl.DaoOrderImpl;
 import task4.dao.impl.DaoShopStorageImpl;
+import task4.entity.Beer;
 import task4.service.CartService;
 import task4.service.OrderService;
 import task4.service.ShoppingStorageService;
 import task4.service.impl.CartServiceImpl;
 import task4.service.impl.OrderServiceImpl;
 import task4.service.impl.ShoppingStorageServiceImpl;
+import task4.storage.FillingStorage;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 public class CommandManager {
-    private IDAOShopStorage daoShopStorage = new DaoShopStorageImpl();
+    private ArrayList<Beer> initProducts = new FillingStorage().setArrayListByTestData();
+
+    private IDAOShopStorage daoShopStorage = new DaoShopStorageImpl(initProducts);
     private IDAOCart daoCart = new DaoCartImpl();
     private IDAOOrder daoOrder = new DaoOrderImpl();
 

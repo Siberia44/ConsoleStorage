@@ -12,6 +12,6 @@ public class ShowAllProducts implements Command {
 
     @Override
     public void execute() {
-        shoppingStorage.showAllProductsFromStorage();
+        System.out.println(shoppingStorage.showAllProductsFromStorage());
     }
 }

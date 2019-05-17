@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoShopStorageImpl.java" line="11" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6556ebce-230b-49d5-847f-f9a47b5560ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/command/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/command/CommandClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/command/Impl/AddProductIntoCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/command/Impl/BuyAllProductsFromCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/command/Impl/ShowAllProducts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/command/Impl/ShowLast5Products.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/command/Impl/ShowProductInCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/dao/IDAOCart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/dao/IDAOShopStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/dao/impl/DaoCartImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/dao/impl/DaoShopStorageImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/entity/Beer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/service/CartService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/service/ShoppingStorageService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/service/impl/CartServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/task4/service/impl/ShoppingStorageServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task4/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task4/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowAllProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowAllProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowLast5Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowLast5Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowProductInCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowProductInCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task4/dao/IDAOCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task4/dao/IDAOCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task4/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task4/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task4/service/ShoppingStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task4/service/ShoppingStorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task4/service/impl/ShoppingStorageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task4/service/impl/ShoppingStorageServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,48 +23,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Task1$Test.ic" NAME="Test Coverage Results" MODIFIED="1557501896590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Task1$COWListTest_retainAllShouldSaveAllElementsThatAreContainedInTheCollection.ic" NAME="COWListTest.retainAllShouldSaveAllElementsThatAreContainedInTheCollection Coverage Results" MODIFIED="1557247932726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$Test_iteratorShouldGoingOnOldArrayAdd.ic" NAME="Test.iteratorShouldGoingOnOldArrayAdd Coverage Results" MODIFIED="1557317169773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_sizeShouldReturnSizeCountWhenCallTHisMethod.ic" NAME="ContainerProductsTest.sizeShouldReturnSizeCountWhenCallTHisMethod Coverage Results" MODIFIED="1556284627825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>part2.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Task1$Test_iterato.ic" NAME="Test.iterato Coverage Results" MODIFIED="1557317874341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_removeByObjectShouldDeleteElementFromList.ic" NAME="ContainerProductsTest.removeByObjectShouldDeleteElementFromList Coverage Results" MODIFIED="1556884324307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Task1.part2.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Task1$COWListTest_removeAllShouldDeleteAllElementsThatAreContainedInTheCollection.ic" NAME="COWListTest.removeAllShouldDeleteAllElementsThatAreContainedInTheCollection Coverage Results" MODIFIED="1557248427964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_inputElementIntoCollection.ic" NAME="ContainerProductsTest.inputElementIntoCollection Coverage Results" MODIFIED="1556274814096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>part2.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_inputElementIntoCollectionByIndex.ic" NAME="ContainerProductsTest.inputElementIntoCollectionByIndex Coverage Results" MODIFIED="1556276021777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>part2.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest.ic" NAME="ContainerProductsTest Coverage Results" MODIFIED="1557136673927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Task1.part2.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_removeByObjectShouldDeleteNull.ic" NAME="ContainerProductsTest.removeByObjectShouldDeleteNull Coverage Results" MODIFIED="1556883770434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Task1.part2.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Task1$COWListTest.ic" NAME="COWListTest Coverage Results" MODIFIED="1557248743519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_removeFromCollectionTheLastElementReturnedByThisIterator.ic" NAME="ContainerProductsTest.removeFromCollectionTheLastElementReturnedByThisIterator Coverage Results" MODIFIED="1556884844803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Task1.part2.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Task1$ShoppingCartServiceTest_addItemToShoppingCartTest.ic" NAME="ShoppingCartServiceTest.addItemToShoppingCartTest Coverage Results" MODIFIED="1558013519782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$Test.ic" NAME="Test Coverage Results" MODIFIED="1557501896590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$ModifiableContainerTest.ic" NAME="ModifiableContainerTest Coverage Results" MODIFIED="1557761478447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$MixedListsTest.ic" NAME="MixedListsTest Coverage Results" MODIFIED="1557248802658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$ModifiableContainerTest_shouldNotRemoveElementInIterator.ic" NAME="ModifiableContainerTest.shouldNotRemoveElementInIterator Coverage Results" MODIFIED="1557760726834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_containsShouldReturnTrueIfThisListContainsElement.ic" NAME="ContainerProductsTest.containsShouldReturnTrueIfThisListContainsElement Coverage Results" MODIFIED="1556285234265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>part2.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Task1$ShoppingCartServiceTest.ic" NAME="ShoppingCartServiceTest Coverage Results" MODIFIED="1558011790080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_isRemoveToObjectDeleteElement.ic" NAME="ContainerProductsTest.isRemoveToObjectDeleteElement Coverage Results" MODIFIED="1556188092582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Task1$Test_iteratorShouldGoingOnOldArrayAdd.ic" NAME="Test.iteratorShouldGoingOnOldArrayAdd Coverage Results" MODIFIED="1557317169773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Task1$Demo.ic" NAME="Demo Coverage Results" MODIFIED="1558013510182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>task4.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$ModifiableContainerTest_shouldNotRemoveElementInIterator.ic" NAME="ModifiableContainerTest.shouldNotRemoveElementInIterator Coverage Results" MODIFIED="1557760726834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Task1$Test_iteratorShouldGoingOnOldArrayRemove.ic" NAME="Test.iteratorShouldGoingOnOldArrayRemove Coverage Results" MODIFIED="1557317175200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_isAddWork.ic" NAME="ContainerProductsTest.isAddWork Coverage Results" MODIFIED="1556186488331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_deleteElementByIndex.ic" NAME="ContainerProductsTest.deleteElementByIndex Coverage Results" MODIFIED="1556274901519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_sizeShouldReturnSizeCountWhenCallTHisMethod.ic" NAME="ContainerProductsTest.sizeShouldReturnSizeCountWhenCallTHisMethod Coverage Results" MODIFIED="1556284627825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>part2.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_iteratorGoesThroughTheCollection.ic" NAME="ContainerProductsTest.iteratorGoesThroughTheCollection Coverage Results" MODIFIED="1556274509472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -80,60 +44,59 @@
     <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_isIteratorWork.ic" NAME="ContainerProductsTest.isIteratorWork Coverage Results" MODIFIED="1556193472001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>part2.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_addWithParamsShouldShiftElements.ic" NAME="ContainerProductsTest.addWithParamsShouldShiftElements Coverage Results" MODIFIED="1556619037060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>part2.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$ModifiableContainerTest.ic" NAME="ModifiableContainerTest Coverage Results" MODIFIED="1557761478447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Task1$ShoppingCartServiceTest.ic" NAME="ShoppingCartServiceTest Coverage Results" MODIFIED="1558096085515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Task1$Test_containsShouldReturnTrueWhenCheckNull.ic" NAME="Test.containsShouldReturnTrueWhenCheckNull Coverage Results" MODIFIED="1557501862473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Task1$HashTest.ic" NAME="HashTest Coverage Results" MODIFIED="1557823495287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Task3.part2.*</FILTER>
+    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_lastIndexShouldReturnIndexOfTheLastMatchingNull.ic" NAME="ContainerProductsTest.lastIndexShouldReturnIndexOfTheLastMatchingNull Coverage Results" MODIFIED="1556879882727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Task1.part2.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_addWithParamsShouldIncreaseElementToThePosition.ic" NAME="ContainerProductsTest.addWithParamsShouldIncreaseElementToThePosition Coverage Results" MODIFIED="1556619239450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>part2.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_addWithParamsShouldShiftElements.ic" NAME="ContainerProductsTest.addWithParamsShouldShiftElements Coverage Results" MODIFIED="1556619037060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_containsShouldReturnTrueIfThisListContainsElement.ic" NAME="ContainerProductsTest.containsShouldReturnTrueIfThisListContainsElement Coverage Results" MODIFIED="1556285234265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>part2.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_lastIndexShouldReturnIndexOfTheLastMatchingNull.ic" NAME="ContainerProductsTest.lastIndexShouldReturnIndexOfTheLastMatchingNull Coverage Results" MODIFIED="1556879882727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Task1$Test_iterato.ic" NAME="Test.iterato Coverage Results" MODIFIED="1557317874341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_inputElementIntoCollectionByIndex.ic" NAME="ContainerProductsTest.inputElementIntoCollectionByIndex Coverage Results" MODIFIED="1556276021777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>part2.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$HashTest.ic" NAME="HashTest Coverage Results" MODIFIED="1557823495287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Task3.part2.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$MixedListsTest.ic" NAME="MixedListsTest Coverage Results" MODIFIED="1557248802658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_isAddWork.ic" NAME="ContainerProductsTest.isAddWork Coverage Results" MODIFIED="1556186488331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_deleteElementByIndex.ic" NAME="ContainerProductsTest.deleteElementByIndex Coverage Results" MODIFIED="1556274901519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>part2.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$COWListTest.ic" NAME="COWListTest Coverage Results" MODIFIED="1557248743519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Task1$COWListTest_removeAllShouldDeleteAllElementsThatAreContainedInTheCollection.ic" NAME="COWListTest.removeAllShouldDeleteAllElementsThatAreContainedInTheCollection Coverage Results" MODIFIED="1557248427964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_removeByObjectShouldDeleteElementFromList.ic" NAME="ContainerProductsTest.removeByObjectShouldDeleteElementFromList Coverage Results" MODIFIED="1556884324307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Task1.part2.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_removeFromCollectionTheLastElementReturnedByThisIterator.ic" NAME="ContainerProductsTest.removeFromCollectionTheLastElementReturnedByThisIterator Coverage Results" MODIFIED="1556884844803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Task1.part2.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest_inputElementIntoCollection.ic" NAME="ContainerProductsTest.inputElementIntoCollection Coverage Results" MODIFIED="1556274814096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>part2.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$ContainerProductsTest.ic" NAME="ContainerProductsTest Coverage Results" MODIFIED="1557136673927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Task1.part2.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Task1$ShoppingCartServiceTest_addItemToShoppingCartTest.ic" NAME="ShoppingCartServiceTest.addItemToShoppingCartTest Coverage Results" MODIFIED="1558013519782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="56" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1465966142">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="713" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="713" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="16" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="16" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+            <state relative-caret-position="281">
+              <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,51 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoOrderImpl.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/GetOrdersInGap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/impl/CartServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1331#1332#0" expanded="true" />
-                <element signature="e#1386#1387#0" expanded="true" />
-                <element signature="e#1451#1452#0" expanded="true" />
-                <element signature="e#1498#1499#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/CartService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/IDAOCart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="340">
+              <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -196,10 +119,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowAllProducts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="204">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
-                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/IDAOCart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task4/util/InputUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -208,21 +156,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowProductInCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            <state relative-caret-position="187">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <element signature="e#291#292#0" expanded="true" />
                 <element signature="e#355#356#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoCartImpl.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/AddProductIntoCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            <state relative-caret-position="340">
+              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -230,21 +177,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowLast5Products.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="15" column="84" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
+            <state relative-caret-position="187">
+              <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
               <folding>
                 <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/task4/Demo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/BuyAllProductsFromCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="374">
+              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/GetNearestDate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -261,7 +223,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lastIndexOf</find>
       <find>size</find>
       <find>size()</find>
       <find>isEmpty</find>
@@ -291,6 +252,7 @@
       <find>HashBySumLetters</find>
       <find>toArray(</find>
       <find>system.out.println</find>
+      <find>find</find>
     </findStrings>
     <replaceStrings>
       <replace>LengthHashCode</replace>
@@ -321,9 +283,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/task4/service/impl/ShoppingStorageImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/dao/ShoppitgStorageList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/command/ShowAllProducts.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4/service/impl/CartImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4/service/Cart.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4/command/ShowProductInCard.java" />
@@ -351,27 +310,30 @@
         <option value="$PROJECT_DIR$/src/main/java/task4/command/CommandClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4/dao/impl/DoaOrderImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4/Demo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/service/impl/ShoppingStorageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/command/Impl/AddProductIntoCard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/command/Impl/GetNearestDate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/command/Impl/GetOrdersInGap.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4/service/CartService.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4/dao/IDAOOrder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/command/Impl/BuyAllProductsFromCard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoShopStorageImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoOrderImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/command/CommandManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/util/InputUtil.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/test/ShoppingCartServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4/dao/IDAOCart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowAllProducts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/task4/service/impl/CartServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowLast5Products.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowProductInCard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/service/impl/ShoppingStorageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowAllProducts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/storage/FillinStorage.java" />
         <option value="$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoCartImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoShopStorageImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/storage/FilinStorage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/storage/FillingStorage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/command/CommandManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/command/Impl/AddProductIntoCard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/service/impl/CartServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoOrderImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/util/InputUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/command/Impl/BuyAllProductsFromCard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/command/Impl/GetNearestDate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/task4/command/Impl/GetOrdersInGap.java" />
       </list>
     </option>
   </component>
@@ -390,11 +352,16 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Task1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="814" />
@@ -407,8 +374,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -477,8 +442,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="task4" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
@@ -487,17 +451,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="task4" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Task1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="task4" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Task1" type="b2602c69:ProjectViewProjectNode" />
@@ -510,7 +464,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Course" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -520,7 +476,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558075765794" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558109755449" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -614,8 +570,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Demo" />
-        <item itemvalue="JUnit.ShoppingCartServiceTest.addItemToShoppingCartTest" />
         <item itemvalue="JUnit.ShoppingCartServiceTest" />
+        <item itemvalue="JUnit.ShoppingCartServiceTest.addItemToShoppingCartTest" />
         <item itemvalue="Application.HashTest" />
         <item itemvalue="JUnit.ModifiableContainerTest" />
       </list>
@@ -679,9 +635,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShoppingCartServiceTest_addItemToShoppingCartTest - 2019.05.16 at 15h 54m 02s.xml">
-      <configuration name="ShoppingCartServiceTest.addItemToShoppingCartTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ShoppingCartServiceTest_addItemToShoppingCartTest - 2019.05.16 at 15h 56m 53s.xml">
       <configuration name="ShoppingCartServiceTest.addItemToShoppingCartTest" configurationId="JUnit" />
     </history-entry>
@@ -709,6 +662,9 @@
     <history-entry file="ShoppingCartServiceTest_addItemToShoppingCartTest - 2019.05.16 at 16h 34m 49s.xml">
       <configuration name="ShoppingCartServiceTest.addItemToShoppingCartTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ShoppingCartServiceTest - 2019.05.17 at 15h 28m 08s.xml">
+      <configuration name="ShoppingCartServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="3058000" />
@@ -723,21 +679,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32331902" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24147122" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="SonarLint" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3120482" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.312026" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29252437" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -747,25 +700,24 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.35969663" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32936078" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="SonarLint" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49945828" visible="true" weight="0.16311301" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.49837488" visible="true" weight="0.119936034" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" x="0" y="0" width="868" height="856" id="Documentation" order="7" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.5005417" side_tool="true" visible="true" weight="0.16311301" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.5016251" side_tool="true" visible="true" weight="0.119936034" />
+      <window_info anchor="right" id="Maven Projects" order="10" />
+      <window_info anchor="right" id="Database" order="11" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rfdgab" />
@@ -844,16 +796,26 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/task4/service/impl/OrderServiceImpl.java</url>
-          <line>44</line>
+          <line>42</line>
           <properties />
           <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/task4/command/Impl/BuyAllProductsFromCard.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/task4/service/impl/CartServiceImpl.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Task1/Beert.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Task1/Beer.java" />
     <entry file="jar://$USER_HOME$/Downloads/junit-4.12.jar!/org/junit/Assert.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Task2/part2/exception/UnmodifiablePartException.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Task2/part1/COWList.java" />
@@ -869,63 +831,8 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/time/LocalDate.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/task4/container/Cart.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/task4/container/StoreStorage.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/entity/Beer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#1746#1747#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/text/DateFormat.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/TreeMap.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/GetNearestDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/CommandClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#118#119#0" expanded="true" />
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/CommandManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/util/InputUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
@@ -933,34 +840,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/AddProductIntoCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Downloads/mockito-core-2.27.0.jar!/org/mockito/internal/debugging/LocationImpl.class" />
     <entry file="jar://$USER_HOME$/Downloads/mockito-core-2.27.0.jar!/org/mockito/internal/creation/bytebuddy/MockMethodInterceptor.class" />
     <entry file="jar://$USER_HOME$/Downloads/mockito-core-2.27.0.jar!/org/mockito/Mockito.class" />
     <entry file="jar://$USER_HOME$/Downloads/mockito-core-2.27.0.jar!/org/mockito/internal/MockitoCore.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/ShoppingStorageService.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/HashMap.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/IDAOShopStorage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="39" />
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/HashMap.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/impl/ShoppingStorageServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/test/ShoppingCartServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="558">
+          <caret line="47" column="16" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/regex/Matcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="621" column="23" selection-start-line="621" selection-start-column="19" selection-end-line="621" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -974,20 +879,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/ShoppingCartServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/storage/FillingStorage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/OrderService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/CommandManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        <state relative-caret-position="-280">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -996,88 +901,131 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="34">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/IDAOShopStorage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/CommandClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding>
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoShopStorageImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/CartService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/BuyAllProductsFromCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/GetOrdersInGap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/ShoppingStorageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task4/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowLast5Products.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/entity/Beer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="84" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
+        <state relative-caret-position="209">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#1667#1668#0" expanded="true" />
+            <element signature="e#1746#1747#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowAllProducts.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/impl/ShoppingStorageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="340">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <element signature="e#424#425#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowProductInCard.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/impl/CartServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        <state relative-caret-position="315">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding>
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+            <element signature="e#1551#1552#0" expanded="true" />
+            <element signature="e#1773#1774#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoCartImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoOrderImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoShopStorageImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/impl/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        <state relative-caret-position="281">
+          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1086,52 +1034,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/IDAOCart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="306">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoOrderImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowAllProducts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="204">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowLast5Products.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
+          <folding>
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/ShowProductInCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#355#356#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/AddProductIntoCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/util/InputUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/CartService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/BuyAllProductsFromCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="374">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/service/impl/CartServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/GetNearestDate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="306">
+          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1331#1332#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1451#1452#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task4/dao/impl/DaoCartImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/task4/command/Impl/GetOrdersInGap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        <state relative-caret-position="340">
+          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

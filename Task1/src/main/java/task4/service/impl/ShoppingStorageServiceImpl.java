@@ -14,11 +14,8 @@ public class ShoppingStorageServiceImpl implements ShoppingStorageService {
     }
 
     @Override
-    public void showAllProductsFromStorage() {
-        ArrayList<Beer> products = daoShopStorage.getAllProducts();
-        for (Beer beer : products){
-            System.out.println(beer.getId()+" - "+ beer);
-        }
+    public ArrayList showAllProductsFromStorage() {
+        return daoShopStorage.getAllProducts();
     }
 
     @Override
