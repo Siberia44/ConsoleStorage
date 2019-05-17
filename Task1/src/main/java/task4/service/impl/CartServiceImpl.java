@@ -32,27 +32,24 @@ public class CartServiceImpl implements CartService {
         if (Objects.isNull(beer)) {
             System.out.println("Product not fount in shop");
         } else {
-            daoCart.addProduct(beer, daoCart.getCountOfProducts(beer) + countOfProducts);
+            addProductsIntoShoppingCart(beer, countOfProducts);
+            addProductsIntoShoppingCartStorage(beer, countOfProducts);
         }
     }
 
     @Override
-    public void showInformationAbout5LatestProductsFromCart() {
-        LinkedHashMap shoppingCartStorage = daoCart.getInformationAbout5LatestProducts();
-        System.out.println(shoppingCartStorage);
+    public LinkedHashMap showInformationAbout5LatestProductsFromCart() {
+        return daoCart.getShoppingCartStorage();
     }
 
     @Override
-    public void showAllProductsInCard() {
-        Map<Beer, Integer> products = daoCart.getAllProductsInCart();
-        for (Beer key : products.keySet()) {
-            System.out.println("name = " + key.getName() + ", count = " + products.get(key));
-        }
+    public Map showAllProductsInCard() {
+        return daoCart.getShoppingCart();
     }
 
     @Override
     public int makeOrder(LocalDate date) {
-        int totalOrderValue = daoCart.getTotalOrderValue();
+        int totalOrderValue = getTotalOrderValue();
         order.putInfoAboutOrderIntoMap(date, removeAllProductsFromCart());
         return totalOrderValue;
     }
@@ -67,5 +64,25 @@ public class CartServiceImpl implements CartService {
             return false;
         }
         return true;
+    }
+
+    private int getTotalOrderValue(){
+        Map<Beer, Integer> shoppingCart = daoCart.getShoppingCart();
+        int totalCost = 0;
+        for (Beer key : shoppingCart.keySet()) {
+            totalCost += key.getCost() * shoppingCart.get(key);
+        }
+        return totalCost;
+    }
+
+    private void addProductsIntoShoppingCart(Beer beer, int countOfProducts){
+        daoCart.addProduct(beer, daoCart.getCountOfProducts(beer) + countOfProducts);
+    }
+
+    private void addProductsIntoShoppingCartStorage(Beer beer, int countOfProducts){
+        daoCart.addProductIntoShoppingCartStorage(beer, countOfProducts);
+        LinkedHashMap shoppingCartStorage = daoCart.getShoppingCartStorage();
+        shoppingCartStorage.keySet().removeIf(o -> shoppingCartStorage.size() == 6);
+        daoCart.updateShoppingCartStorage(shoppingCartStorage);
     }
 }

@@ -12,8 +12,7 @@ public class ShowProductInCard implements Command {
 
     @Override
     public void execute() {
-
-        cart.showAllProductsInCard();
+        System.out.println(cart.showAllProductsInCard());
     }
 
 }

@@ -1,9 +1,7 @@
 package task4.service;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public interface CartService {
@@ -11,9 +9,9 @@ public interface CartService {
 
     int makeOrder(LocalDate date);
 
-    void showInformationAbout5LatestProductsFromCart();
+    LinkedHashMap showInformationAbout5LatestProductsFromCart();
 
-    void showAllProductsInCard();
+    Map showAllProductsInCard();
 
     Map removeAllProductsFromCart();
 }

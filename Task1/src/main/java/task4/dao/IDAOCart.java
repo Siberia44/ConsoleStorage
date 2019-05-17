@@ -8,18 +8,18 @@ import java.util.Map;
 
 public interface IDAOCart {
 
-    Map getAllProductsInCart();
-
     boolean addProduct(Beer beer, int countOfProducts);
 
     HashMap removeAllProducts();
 
-    void addIntoMapFor5LastProducts(Beer beer, int countOfProducts);
-
-    LinkedHashMap getInformationAbout5LatestProducts();
-
-    int getTotalOrderValue();
-
     int getCountOfProducts(Beer beer);
+
+    Map getShoppingCart();
+
+    LinkedHashMap getShoppingCartStorage();
+
+    void updateShoppingCartStorage(LinkedHashMap linkedHashMap);
+
+    void addProductIntoShoppingCartStorage(Beer beer, int countOfProduct);
 
 }

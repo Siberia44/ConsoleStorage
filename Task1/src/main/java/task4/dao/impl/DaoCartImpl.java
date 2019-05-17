@@ -19,13 +19,7 @@ public class DaoCartImpl implements IDAOCart {
     @Override
     public boolean addProduct(Beer beer, int countOfProducts) {
         shoppingCart.put(beer, countOfProducts);
-        addIntoMapFor5LastProducts(beer, countOfProducts);
         return true;
-    }
-
-    @Override
-    public LinkedHashMap getInformationAbout5LatestProducts() {
-        return shoppingCartStorage;
     }
 
     @Override
@@ -36,27 +30,28 @@ public class DaoCartImpl implements IDAOCart {
     }
 
     @Override
-    public void addIntoMapFor5LastProducts(Beer beer, int countOfProduct) {
+    public LinkedHashMap getShoppingCartStorage() {
+        return shoppingCartStorage;
+    }
+
+    @Override
+    public void updateShoppingCartStorage(LinkedHashMap linkedHashMap) {
+        this.shoppingCartStorage = linkedHashMap;
+    }
+
+    @Override
+    public void addProductIntoShoppingCartStorage(Beer beer, int countOfProduct) {
         shoppingCartStorage.put(beer, countOfProduct);
-        shoppingCartStorage.keySet().removeIf(o -> shoppingCartStorage.size() == 6);
     }
 
     @Override
-    public Map getAllProductsInCart() {
+    public Map getShoppingCart(){
         return shoppingCart;
-    }
-
-    @Override
-    public int getTotalOrderValue() {
-        int totalCost = 0;
-        for (Beer key : shoppingCart.keySet()) {
-            totalCost += key.getCost() * shoppingCart.get(key);
-        }
-        return totalCost;
     }
 
     @Override
     public int getCountOfProducts(Beer beer) {
         return shoppingCart.getOrDefault(beer, 0);
     }
+
 }

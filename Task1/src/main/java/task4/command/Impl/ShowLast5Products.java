@@ -13,6 +13,6 @@ public class ShowLast5Products implements Command {
 
     @Override
     public void execute() {
-        cartService.showInformationAbout5LatestProductsFromCart();
+        System.out.println(cartService.showInformationAbout5LatestProductsFromCart());
     }
 }
