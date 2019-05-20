@@ -2,7 +2,7 @@ package task4.dao;
 
 import task4.entity.Beer;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface IDAOShopStorage {
 
@@ -11,7 +11,7 @@ public interface IDAOShopStorage {
      *
      * @return list with all products in shop
      */
-    ArrayList getAllProducts();
+    List<Beer> getAllProducts();
 
     /**
      * Get product by name

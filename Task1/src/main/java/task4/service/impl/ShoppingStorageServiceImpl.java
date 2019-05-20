@@ -4,7 +4,7 @@ import task4.dao.IDAOShopStorage;
 import task4.entity.Beer;
 import task4.service.ShoppingStorageService;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class ShoppingStorageServiceImpl implements ShoppingStorageService {
     private IDAOShopStorage daoShopStorage;
@@ -14,7 +14,7 @@ public class ShoppingStorageServiceImpl implements ShoppingStorageService {
     }
 
     @Override
-    public ArrayList showAllProductsFromStorage() {
+    public List showAllProductsFromStorage() {
         return daoShopStorage.getAllProducts();
     }
 

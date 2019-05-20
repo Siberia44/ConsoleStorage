@@ -1,7 +1,6 @@
 package task4.service;
 
 import java.time.LocalDate;
-import java.util.HashMap;
 import java.util.Map;
 
 public interface CartService {
@@ -28,7 +27,7 @@ public interface CartService {
      *
      * @return shopping cart storage
      */
-    HashMap showInformationAbout5LatestProductsFromCart();
+    Map showInformationAbout5LatestProductsFromCart();
 
     /**
      * @return shopping cart

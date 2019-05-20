@@ -2,7 +2,7 @@ package task4.service;
 
 import task4.entity.Beer;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface ShoppingStorageService {
     /**
@@ -10,7 +10,7 @@ public interface ShoppingStorageService {
      *
      * @return list of products
      */
-    ArrayList showAllProductsFromStorage();
+    List showAllProductsFromStorage();
 
     /**
      * get product by name

@@ -35,7 +35,7 @@ public class CartServiceImpl implements CartService {
     }
 
     @Override
-    public HashMap showInformationAbout5LatestProductsFromCart() {
+    public Map showInformationAbout5LatestProductsFromCart() {
         return daoCart.getShoppingCartStorage();
     }
 
@@ -57,10 +57,7 @@ public class CartServiceImpl implements CartService {
     }
 
     private boolean checkIndex(int countOfProducts) {
-        if (countOfProducts <= 0) {
-            return false;
-        }
-        return true;
+        return countOfProducts > 0;
     }
 
     private int getTotalOrderValue() {

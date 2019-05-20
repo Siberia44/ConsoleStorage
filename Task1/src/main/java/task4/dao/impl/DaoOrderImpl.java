@@ -15,7 +15,7 @@ public class DaoOrderImpl implements IDAOOrder {
     }
 
     @Override
-    public TreeMap getOrdersMap() {
+    public Map getOrdersMap() {
         return order;
     }
 }

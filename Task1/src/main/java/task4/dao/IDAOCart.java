@@ -2,7 +2,6 @@ package task4.dao;
 
 import task4.entity.Beer;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -23,7 +22,7 @@ public interface IDAOCart {
      *
      * @return deleted map
      */
-    HashMap<Beer, Integer> removeAllProducts();
+    Map<Beer, Integer> removeAllProducts();
 
     /**
      * Return count of products by key;
@@ -45,14 +44,14 @@ public interface IDAOCart {
      *
      * @return shopping cart storage
      */
-    HashMap getShoppingCartStorage();
+    Map getShoppingCartStorage();
 
     /**
      * Set shopping cart from param;
      *
      * @param linkedHashMap storage on which we replace the storage
      */
-    void updateShoppingCartStorage(LinkedHashMap linkedHashMap);
+    void updateShoppingCartStorage(Map linkedHashMap);
 
     /**
      * Put element into storage

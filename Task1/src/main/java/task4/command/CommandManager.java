@@ -16,13 +16,10 @@ import task4.service.impl.OrderServiceImpl;
 import task4.service.impl.ShoppingStorageServiceImpl;
 import task4.storage.FillingStorage;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class CommandManager {
-    private ArrayList<Beer> initProducts = new FillingStorage().setArrayListByTestData();
+    private List<Beer> initProducts = new FillingStorage().setArrayListByTestData();
 
     private IDAOShopStorage daoShopStorage = new DaoShopStorageImpl(initProducts);
     private IDAOCart daoCart = new DaoCartImpl();

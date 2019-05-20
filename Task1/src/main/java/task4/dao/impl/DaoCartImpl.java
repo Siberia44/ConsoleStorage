@@ -27,20 +27,20 @@ public class DaoCartImpl implements IDAOCart {
     }
 
     @Override
-    public HashMap<Beer, Integer> removeAllProducts() {
+    public Map<Beer, Integer> removeAllProducts() {
         HashMap<Beer, Integer> deletedCart = new HashMap<>(shoppingCart);
         shoppingCart.clear();
         return deletedCart;
     }
 
     @Override
-    public HashMap getShoppingCartStorage() {
+    public Map getShoppingCartStorage() {
         return shoppingCartStorage;
     }
 
     @Override
-    public void updateShoppingCartStorage(LinkedHashMap linkedHashMap) {
-        this.shoppingCartStorage = linkedHashMap;
+    public void updateShoppingCartStorage(Map linkedHashMap) {
+        this.shoppingCartStorage = (HashMap<Beer, Integer>) linkedHashMap;
     }
 
     @Override
