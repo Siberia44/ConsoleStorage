@@ -46,16 +46,16 @@ public class CommandManager {
         map.put("7", new GetOrdersInGap(order));
     }
 
-    public void showMenu(){
+    public void showMenu() {
         System.out.println("1. Show all products");
-        System.out.println("2. Sow products in cart");
+        System.out.println("2. Show products in cart");
         System.out.println("3. Add product in card");
         System.out.println("4. Buy all products from cart");
         System.out.println("5. Show 5 latest products");
         System.out.println("6. Show order by nearest date");
         System.out.println("7. Show order list in gap");
         Scanner sc = new Scanner(System.in);
-        while (true){
+        while (true) {
             String number = sc.nextLine();
             if (map.containsKey(number)) {
                 commandClient.setCommand(map.get(number));

@@ -1,10 +1,10 @@
 package task4.command.Impl;
 
-import task4.service.ShoppingStorageService;
 import task4.command.Command;
+import task4.service.ShoppingStorageService;
 
 public class ShowAllProducts implements Command {
-    ShoppingStorageService shoppingStorage;
+    private ShoppingStorageService shoppingStorage;
 
     public ShowAllProducts(ShoppingStorageService shoppingStorage) {
         this.shoppingStorage = shoppingStorage;

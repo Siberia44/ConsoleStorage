@@ -9,11 +9,15 @@ import java.util.Map;
 
 public class DaoCartImpl implements IDAOCart {
     private HashMap<Beer, Integer> shoppingCart;
-    private LinkedHashMap<Beer, Integer> shoppingCartStorage;
+    private HashMap<Beer, Integer> shoppingCartStorage = new LinkedHashMap<Beer, Integer>(){
+        @Override
+        protected boolean removeEldestEntry(Map.Entry<Beer, Integer> eldest) {
+            return size() > 5;
+        }
+    };
 
     public DaoCartImpl() {
         shoppingCart = new HashMap<>();
-        shoppingCartStorage = new LinkedHashMap<>();
     }
 
     @Override
@@ -23,14 +27,14 @@ public class DaoCartImpl implements IDAOCart {
     }
 
     @Override
-    public HashMap removeAllProducts() {
-        HashMap deletedCart = new HashMap(shoppingCart);
+    public HashMap<Beer, Integer> removeAllProducts() {
+        HashMap<Beer, Integer> deletedCart = new HashMap<>(shoppingCart);
         shoppingCart.clear();
         return deletedCart;
     }
 
     @Override
-    public LinkedHashMap getShoppingCartStorage() {
+    public HashMap getShoppingCartStorage() {
         return shoppingCartStorage;
     }
 
@@ -45,7 +49,7 @@ public class DaoCartImpl implements IDAOCart {
     }
 
     @Override
-    public Map getShoppingCart(){
+    public Map getShoppingCart() {
         return shoppingCart;
     }
 
@@ -54,4 +58,8 @@ public class DaoCartImpl implements IDAOCart {
         return shoppingCart.getOrDefault(beer, 0);
     }
 
+    @Override
+    public void removeElementFromMap(Beer beer) {
+        shoppingCartStorage.remove(beer);
+    }
 }

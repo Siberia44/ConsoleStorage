@@ -7,7 +7,7 @@ import task4.service.ShoppingStorageService;
 import java.util.ArrayList;
 
 public class ShoppingStorageServiceImpl implements ShoppingStorageService {
-    IDAOShopStorage daoShopStorage;
+    private IDAOShopStorage daoShopStorage;
 
     public ShoppingStorageServiceImpl(IDAOShopStorage daoShopStorage) {
         this.daoShopStorage = daoShopStorage;

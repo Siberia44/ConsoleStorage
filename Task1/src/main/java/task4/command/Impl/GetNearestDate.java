@@ -7,7 +7,7 @@ import task4.util.InputUtil;
 import java.util.Scanner;
 
 public class GetNearestDate implements Command {
-    OrderService orderService;
+    private OrderService orderService;
 
     public GetNearestDate(OrderService orderService) {
         this.orderService = orderService;

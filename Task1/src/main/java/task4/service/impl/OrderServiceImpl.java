@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class OrderServiceImpl implements OrderService {
-    IDAOOrder daoOrder;
+    private IDAOOrder daoOrder;
 
     public OrderServiceImpl(IDAOOrder daoOrder) {
         this.daoOrder = daoOrder;
@@ -43,7 +43,7 @@ public class OrderServiceImpl implements OrderService {
         LocalDate startDate = parseDateFromString(firstDate);
         LocalDate finishDate = parseDateFromString(lastDate);
         TreeMap<LocalDate, Map> map = daoOrder.getOrdersMap();
-        return map.subMap(startDate,true,finishDate,true);
+        return map.subMap(startDate, true, finishDate, true);
     }
 
     private LocalDate parseDateFromString(String date) {

@@ -7,7 +7,7 @@ import task4.util.InputUtil;
 import java.util.Scanner;
 
 public class GetOrdersInGap implements Command {
-    OrderService orderService;
+    private OrderService orderService;
 
     public GetOrdersInGap(OrderService orderService) {
         this.orderService = orderService;
@@ -20,7 +20,7 @@ public class GetOrdersInGap implements Command {
         String firstDate = sc.nextLine();
         System.out.println("Input last date");
         String lastDate = sc.nextLine();
-        if(InputUtil.isDateCorrect(firstDate) && InputUtil.isDateCorrect(lastDate)) {
+        if (InputUtil.isDateCorrect(firstDate) && InputUtil.isDateCorrect(lastDate)) {
             System.out.println(orderService.getOrdersInGap(firstDate, lastDate));
         } else {
             System.out.println("Date is not correct");

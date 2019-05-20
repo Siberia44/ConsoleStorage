@@ -7,15 +7,12 @@ import task4.service.OrderService;
 import task4.service.ShoppingStorageService;
 
 import java.time.LocalDate;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Objects;
+import java.util.*;
 
 public class CartServiceImpl implements CartService {
-    IDAOCart daoCart;
-    ShoppingStorageService shoppingStorageService;
-    OrderService order;
+    private IDAOCart daoCart;
+    private ShoppingStorageService shoppingStorageService;
+    private OrderService order;
 
     public CartServiceImpl(IDAOCart daoCart, ShoppingStorageService shoppingStorageService, OrderService order) {
         this.daoCart = daoCart;
@@ -38,7 +35,7 @@ public class CartServiceImpl implements CartService {
     }
 
     @Override
-    public LinkedHashMap showInformationAbout5LatestProductsFromCart() {
+    public HashMap showInformationAbout5LatestProductsFromCart() {
         return daoCart.getShoppingCartStorage();
     }
 
@@ -66,7 +63,7 @@ public class CartServiceImpl implements CartService {
         return true;
     }
 
-    private int getTotalOrderValue(){
+    private int getTotalOrderValue() {
         Map<Beer, Integer> shoppingCart = daoCart.getShoppingCart();
         int totalCost = 0;
         for (Beer key : shoppingCart.keySet()) {
@@ -75,14 +72,14 @@ public class CartServiceImpl implements CartService {
         return totalCost;
     }
 
-    private void addProductsIntoShoppingCart(Beer beer, int countOfProducts){
+    private void addProductsIntoShoppingCart(Beer beer, int countOfProducts) {
         daoCart.addProduct(beer, daoCart.getCountOfProducts(beer) + countOfProducts);
     }
 
-    private void addProductsIntoShoppingCartStorage(Beer beer, int countOfProducts){
+    private void addProductsIntoShoppingCartStorage(Beer beer, int countOfProducts) {
+        if (Objects.nonNull(shoppingStorageService.getBeerByName(beer.getName()))){
+            daoCart.removeElementFromMap(beer);
+        }
         daoCart.addProductIntoShoppingCartStorage(beer, countOfProducts);
-        LinkedHashMap shoppingCartStorage = daoCart.getShoppingCartStorage();
-        shoppingCartStorage.keySet().removeIf(o -> shoppingCartStorage.size() == 6);
-        daoCart.updateShoppingCartStorage(shoppingCartStorage);
     }
 }

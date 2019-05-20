@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class BuyAllProductsFromCard implements Command {
-    CartService cartService;
+    private CartService cartService;
 
     public BuyAllProductsFromCard(CartService cartService) {
         this.cartService = cartService;
@@ -19,7 +19,7 @@ public class BuyAllProductsFromCard implements Command {
     public void execute() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please input date (dd.MM.yyy): ");
+        System.out.println("Please input date (dd/MM/yyy): ");
         LocalDate localDate;
         String date = sc.nextLine();
         if (InputUtil.isDateCorrect(date)) {

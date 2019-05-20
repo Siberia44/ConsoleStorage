@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class DaoOrderImpl implements IDAOOrder {
-    TreeMap<LocalDate, Map> order = new TreeMap();
+    private TreeMap<LocalDate, Map> order = new TreeMap();
 
     @Override
     public void putOrderIntoOrderMap(LocalDate date, Map map) {
